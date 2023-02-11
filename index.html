@@ -53,14 +53,71 @@
             </div>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <button data-modal-close type="button" class="btn-close">
+                    <button class="btn-close" data-modal-close type="button">
                         <svg width="8" height="8">
                             <use href="./images/icons.svg#icon-icon-close"></use>
                         </svg></button>
+                    <strong class="modal-txt">Leave your contacts and we will call you back</strong>
+
+                    <form class="modal-contacts" name="order-form">
+
+                        <label class="modal-form-label" for="user_name">Name</label>
+                        <div class="form-field">
+                            <input class="contact-input" id="user_name" name="user_name" type="text" required>
+
+                            <svg class="form-icon" width="18
+                            " height="18
+                            ">
+                                <use href="./images/icons.svg#icon-icone-name"></use>
+                            </svg>
+                        </div>
+
+                        <label class="modal-form-label" for="phone">Phone</label>
+                        <div class="form-field">
+                            <input class="contact-input" id="phone" name="phone" type="tel" required>
+                            <svg class="form-icon" width="18
+                            " height="18
+                            ">
+                                <use href="./images/icons.svg#icon-icon-phone"></use>
+                            </svg>
+                        </div>
+
+                        <label class="modal-form-label" for="email">Email</label>
+                        <div class="form-field">
+                            <input class="contact-input" id="email" name="email" type="email">
+                            <svg class="form-icon" width="18" height="18">
+                                <use href="./images/icons.svg#icon-icon-letter"></use>
+                            </svg>
+                        </div>
+
+                        <label class="modal-form-label" for="comment">Comment</label>
+                        <textarea class="contact-message" id="comment" name="comment" rows="6"
+                            placeholder="Text input"></textarea>
+
+
+                        <label class="label-checkbox">
+                            <input class="checkbox" type="checkbox" value="accept">
+                            <span class="checkbox-txt">I accept the terms and conditions of the <a class="privacy-link"
+                                    href>
+                                    Privacy Policy</a></span>
+                        </label>
+
+
+                        <button class="button modal-btn" type="submit">Send</button>
+                    </form>
+
 
                 </div>
+
             </div>
+
+
+
         </section>
+
+
+
+
 
         <!-- /**
         |============================
@@ -345,8 +402,25 @@
 
                 </ul>
             </div>
+            <div>
+                <form class="footer-subscribe">
+                    <div class="email-input txt">
+
+                        <label for="mail">Subscribe</label>
+                        <input class="input-footer" id="mail" name="mail" type="email" placeholder="E-mail">
+
+                    </div>
+                    <button class="button btn-footer" type="submit">Subscribe
+                        <svg width="24" height="20">
+                            <use href=".//images/icons.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
 
         </div>
+
+
 
     </footer>
     <script src="./js/modal.js"></script>
